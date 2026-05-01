@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://2otybuyjo7ek"]
+
+[ext_resource type="Script" uid="uid://bydbli6hsn2iu" path="res://scripts/main_menu.gd" id="1_yqorp"]
+
+[sub_resource type="SystemFont" id="SystemFont_ukcvp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yqorp"]
+line_spacing = 4.0
+font = SubResource("SystemFont_ukcvp")
+font_size = 64
+
+[node name="MainMenu" type="Node2D" unique_id=943829588]
+script = ExtResource("1_yqorp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1306334688]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=486951821]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=1315917219]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0025846874, 0.3549277, 1.92523e-07, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=1511219367]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="CanvasLayer/Control/VBoxContainer" unique_id=130279635]
+layout_mode = 2
+text = "DROPLET OF SOUL"
+label_settings = SubResource("LabelSettings_yqorp")
+
+[node name="StartButton" type="Button" parent="CanvasLayer/Control/VBoxContainer" unique_id=661438279]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "START"
+
+[node name="QuitButton" type="Button" parent="CanvasLayer/Control/VBoxContainer" unique_id=969877149]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "QUIT"

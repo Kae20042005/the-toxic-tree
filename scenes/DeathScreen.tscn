@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://kfs3j6xqogq"]
+
+[ext_resource type="Script" uid="uid://c4mudugmu4wr0" path="res://scripts/death_screen.gd" id="1_biyii"]
+
+[node name="DeathScreen" type="CanvasLayer" unique_id=2083753631]
+layer = 100
+script = ExtResource("1_biyii")
+
+[node name="Control" type="Control" parent="." unique_id=794631226]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DarkOverlay" type="ColorRect" parent="Control" unique_id=1527813181]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.23921569)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1683416654]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="DiedLabel" type="Label" parent="Control/VBoxContainer" unique_id=700804244]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "YOU DIED"
+
+[node name="RespawnButton" type="Button" parent="Control/VBoxContainer" unique_id=1649259806]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "RESPAWN"
+
+[node name="MainMenuButton" type="Button" parent="Control/VBoxContainer" unique_id=314600189]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "BACK TO MAIN MENU"

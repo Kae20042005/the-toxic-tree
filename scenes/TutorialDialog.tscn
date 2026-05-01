@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://b7napbhxgefxy"]
+
+[ext_resource type="Script" uid="uid://bhqi8ea5hyuvl" path="res://scripts/tutorial_dialog.gd" id="1_ab1n4"]
+[ext_resource type="Texture2D" uid="uid://o0pmm782dioq" path="res://assets/Swordsman/Swordsman_lvl1/Without_shadow/Swordsman_lvl1_Idle_without_shadow.png" id="1_fqb4x"]
+[ext_resource type="Texture2D" uid="uid://b7t82roswmkul" path="res://assets/Pixel Crawler - Free Pack/Entities/Npc's/Rogue/Idle/Idle-Sheet.png" id="2_ab1n4"]
+
+[node name="TutorialDialog" type="CanvasLayer" unique_id=1429890691]
+script = ExtResource("1_ab1n4")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1316472055]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.19607843)
+
+[node name="PortraitLeft" type="Sprite2D" parent="." unique_id=1409661253]
+unique_name_in_owner = true
+position = Vector2(203.00002, 359.00003)
+scale = Vector2(15, 15)
+texture = ExtResource("1_fqb4x")
+region_enabled = true
+region_rect = Rect2(407.15054, 145.92827, 17.932648, 29.59755)
+
+[node name="PortraitRight" type="Sprite2D" parent="." unique_id=1788545884]
+unique_name_in_owner = true
+position = Vector2(977.99994, 342)
+scale = Vector2(14, 14)
+texture = ExtResource("2_ab1n4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(4.2823353, 0, 22.459328, 32)
+
+[node name="DialogBox" type="Control" parent="." unique_id=243033860]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="DialogBox" unique_id=491879484]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.78431374)
+
+[node name="SpeakerLabel" type="Label" parent="DialogBox" unique_id=434388336]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 71.0
+offset_top = 21.0
+offset_right = 134.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 28
+text = "TEST"
+
+[node name="DialogLabel" type="RichTextLabel" parent="DialogBox" unique_id=1324844966]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 75.0
+offset_top = 63.0
+offset_right = 1068.0
+offset_bottom = 174.0
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 24
+theme_override_font_sizes/bold_italics_font_size = 24
+theme_override_font_sizes/italics_font_size = 24
+theme_override_font_sizes/mono_font_size = 24
+bbcode_enabled = true
+text = "sssssssssssssssss"
+
+[node name="ContinueHint" type="Label" parent="DialogBox" unique_id=136197756]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -92.0
+offset_top = -34.0
+offset_right = 92.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Press Space to continue"
+horizontal_alignment = 1

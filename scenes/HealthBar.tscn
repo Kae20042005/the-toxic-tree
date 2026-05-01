@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bhh5yi5y8mnd0"]
+
+[ext_resource type="Script" uid="uid://cnpwi6aavss30" path="res://scripts/health_bar.gd" id="1_tmb1u"]
+
+[node name="HealthBar" type="Node2D" unique_id=1729367975]
+script = ExtResource("1_tmb1u")
+
+[node name="BarBg" type="ColorRect" parent="." unique_id=1387975130]
+offset_right = 40.0
+offset_bottom = 6.0
+color = Color(0, 0, 0, 1)
+
+[node name="BarDamage" type="ColorRect" parent="." unique_id=387339763]
+offset_right = 40.0
+offset_bottom = 6.0
+color = Color(1, 0.84313726, 0, 1)
+
+[node name="BarHealth" type="ColorRect" parent="." unique_id=2086780362]
+offset_right = 40.0
+offset_bottom = 6.0
