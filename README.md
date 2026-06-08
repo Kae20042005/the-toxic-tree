@@ -1,3 +1,24 @@
+# Perubahan untuk UAS
+**task**: tambah fitur pickup health
+
+## Struktur Scene
+```
+HealingOrb (Area2D)
+-- Sprite2D
+-- CollisionShape2D (pada layer 2 untuk mendeteksi player)
+-- PointLight2D
+```
+
+## Script `healing_orb.gd`
+| Property | Default | Deskripsi |
+|------|------|------|
+| heal_amount | 25 | Jumlah HP yang ditambahkan ke player |
+| float_amplitude | 5.0 | Seberapa tinggi naik-turun orb (pixel) |
+| float_speed | 2.0 | Kecepatan animasi float |
+
+## Dokumentasi perubahan
+![Gambar Perubahan](assets/dokumentasi_perubahan.png)
+
 # List Aset
 
 ## Tilemap
