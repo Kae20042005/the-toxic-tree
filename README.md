@@ -1,12 +1,15 @@
 # Perubahan untuk UAS
 **task**: tambah fitur pickup health
 
+Task diimplementasikan dengan membuat Scene baru yaitu `HealingOrb` yang kemudian dikaitkan dengan script untuk implementasi healing orb nya. Healing Orb tersebar di map dengan menaruh scene Healing Orb pada main level secara manual. Kemudian, untuk polishing Healing Orb diimplementasikan PointLight untuk penambahan cahaya dan Audio untuk prompt ketika Healing Orb diambil
+
 ## Struktur Scene
 ```
 HealingOrb (Area2D)
 -- Sprite2D
 -- CollisionShape2D (pada layer 2 untuk mendeteksi player)
 -- PointLight2D
+-- AudioStreamPlayer2D
 ```
 
 ## Script `healing_orb.gd`
